@@ -1,0 +1,27 @@
+# ---- Yandex Cloud auth ----
+yc_zone      = "ru-central1-a"
+yc_folder_id = "<your-folder-id>"
+yc_token     = "<your-oauth-token>"
+yc_cloud_id  = "<your-cloud-id>"
+yc_image_id  = "<your-image-id>"
+
+# ---- Storage ----
+bucket_name         = "otus-ops-project-bucket"
+create_static_keys  = true
+
+# ---- SSH ----
+ssh_public_key_path = "/home/user/.ssh/id_ed25519.pub"
+
+# ---- Naming prefix ----
+name_prefix = "otus"
+
+# ---- Network ----
+create_network      = false
+existing_network_id = "<your-existing-network-id>"
+
+# ---- Dataproc cluster ----
+data_hosts_count = 1
+data_disk_gb     = 64
+
+# ---- Security ----
+admin_cidr = "<your-public-ip>/32"

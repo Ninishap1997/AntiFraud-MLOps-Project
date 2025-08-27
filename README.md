@@ -105,3 +105,10 @@
    - Шифрование данных (в покое и при передаче).
    - Управление доступом по ролям (RBAC).
 
+
+**ДЗ 2**
+
+![img.png](img.png)
+bucket_public_url = "https://otus-ops-project-bucket.storage.yandexcloud.net/"
+
+
