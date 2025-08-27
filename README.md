@@ -110,6 +110,7 @@
 
 ![img.png](img.png)
 bucket_public_url = "https://otus-ops-project-bucket.storage.yandexcloud.net/"
+![img_1.png](img_1.png)
 
 p.s - Использование HDFS на SSD-дисках в Dataproc примерно в 8–10 раз дороже, чем хранение тех же данных в Yandex Object Storage. Поэтому оптимальная архитектура — хранить данные в Object Storage, а HDFS использовать только как временное рабочее пространство.
 
