@@ -111,4 +111,13 @@
 ![img.png](img.png)
 bucket_public_url = "https://otus-ops-project-bucket.storage.yandexcloud.net/"
 
+p.s - Использование HDFS на SSD-дисках в Dataproc примерно в 8–10 раз дороже, чем хранение тех же данных в Yandex Object Storage. Поэтому оптимальная архитектура — хранить данные в Object Storage, а HDFS использовать только как временное рабочее пространство.
+
+Оптимизация - 	
+    •	Использовать Preemptible (прерываемые) ВМ для DataNodes → цена ниже на ~70%.
+	•	Автоматически выключать кластер в нерабочее время (terraform destroy и terraform apply по расписанию).
+	•	Минимизировать число DataNodes (например, 1 вместо 3).
+	•	Хранить всё в Object Storage, а в HDFS только временные данные.
+	•	Использовать разные диск-типы (HDD вместо SSD, если нагрузка допускает).
+
 
